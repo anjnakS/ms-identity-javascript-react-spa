@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+   frontend2:
+     stdin_open: true
+     container_name: codecollaborator
+     image: 'anjnadockerid1/codecollaborator:v2'
+     build:
+       dockerfile: Dockerfile
+       context: ./
+     ports:
+       - "3000:80"
+    
